@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* line 2, ../sass/_generals.scss */
 body {
   margin: 0px;
@@ -123,10 +122,6 @@ input {
 .card .check input:checked + label {
   background: #782486;
 }
-/* line 28, ../sass/checklist.scss */
-.card .check input:checked + label span {
-  content: "°";
-}
 /* line 33, ../sass/checklist.scss */
 .card .check label {
   background-color: #9E9E9E;
@@ -143,5 +138,4 @@ input {
 /* line 45, ../sass/checklist.scss */
 .card .check label span {
   color: white;
-  content: "+";
 }

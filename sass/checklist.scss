@@ -25,9 +25,9 @@
 
             &:checked + label{
                 background: #782486;    
-                span{
-                    content: "°";
-                }
+                // span{
+                //     content: "°";
+                // }
             }
         }
         label{
@@ -44,7 +44,7 @@
 
             span{
                 color: white;
-                content: "+";
+                // content: "+";
             }
         }
     }
