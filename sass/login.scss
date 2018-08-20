@@ -27,8 +27,8 @@
     border-radius: 24px;
     position: absolute;
     cursor: pointer;
-    right: 1rem;
-    top: 30.7rem;
+    right: 3rem;
+    top: 8.9rem;
 
     a{
         text-decoration: none; 
@@ -40,8 +40,6 @@
         padding: 12px 32px;
         font-style: italic;
         font-size: 16px;
-        
-
     }
 }
 
@@ -66,9 +64,7 @@
          
         &:focus{
             border-radius: 8px;
-            width: 90%;
-
-            
+            width: 90%;    
         }
     }
 }

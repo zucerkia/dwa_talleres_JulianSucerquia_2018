@@ -51,8 +51,8 @@ input {
   border-radius: 24px;
   position: absolute;
   cursor: pointer;
-  right: 1rem;
-  top: 30.7rem;
+  right: 3rem;
+  top: 8.9rem;
 }
 /* line 33, ../sass/login.scss */
 .login-btn a {
@@ -67,7 +67,7 @@ input {
   font-size: 16px;
 }
 
-/* line 48, ../sass/login.scss */
+/* line 46, ../sass/login.scss */
 .login-inputs {
   right: 0;
   top: 22rem;
@@ -75,17 +75,17 @@ input {
   border-radius: 16rem 0 0 16rem;
   background-color: #85be87;
 }
-/* line 58, ../sass/login.scss */
+/* line 56, ../sass/login.scss */
 .login-inputs input {
   font-style: italic;
 }
-/* line 62, ../sass/login.scss */
+/* line 60, ../sass/login.scss */
 .login-inputs .animate {
   width: 70%;
   transition-property: border-radius, width;
   transition-duration: 1s, 1s;
 }
-/* line 67, ../sass/login.scss */
+/* line 65, ../sass/login.scss */
 .login-inputs .animate:focus {
   border-radius: 8px;
   width: 90%;
