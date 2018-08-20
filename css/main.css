@@ -1,14 +1,15 @@
 /* line 2, ../sass/_generals.scss */
 body {
   margin: 0px;
+  background-color: #209287;
 }
 
-/* line 7, ../sass/_generals.scss */
+/* line 8, ../sass/_generals.scss */
 main {
   position: relative;
 }
 
-/* line 12, ../sass/_generals.scss */
+/* line 13, ../sass/_generals.scss */
 input {
   display: inline-block;
   width: 90%;
@@ -20,27 +21,46 @@ input {
 }
 
 /* line 2, ../sass/login.scss */
-.login-inputs {
+.login-shape {
   position: absolute;
   width: 50%;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* line 8, ../sass/login.scss */
+.login-text {
+  left: 0;
+  top: 5rem;
+  padding: 1rem 2rem 1rem 6rem;
+  border-radius: 0 16rem 16rem 0;
+  background-color: #8bb757;
+  font-size: 24px;
+  font-style: italic;
+}
+/* line 17, ../sass/login.scss */
+.login-text h1 {
+  color: white;
+}
+
+/* line 22, ../sass/login.scss */
+.login-inputs {
   right: 0;
   top: 22rem;
   padding: 2rem 2rem 2rem 6rem;
   border-radius: 16rem 0 0 16rem;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
   background-color: #85be87;
 }
-/* line 12, ../sass/login.scss */
+/* line 32, ../sass/login.scss */
 .login-inputs input {
   font-style: italic;
 }
-/* line 16, ../sass/login.scss */
+/* line 36, ../sass/login.scss */
 .login-inputs .animate {
   width: 70%;
   transition-property: border-radius, width;
   transition-duration: 1s, 1s;
 }
-/* line 21, ../sass/login.scss */
+/* line 41, ../sass/login.scss */
 .login-inputs .animate:focus {
   border-radius: 8px;
   width: 90%;

@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$login-field-color".
-        on line 10 of C:/Users/JulianAndresSucerqui/Desktop/2018-02/DWA/admin-ilustraciones/sass/login.scss
+Error: Undefined variable: "$login-bg-text-color".
+        on line 13 of C:/Users/JulianAndresSucerqui/Desktop/2018-02/DWA/admin-ilustraciones/sass/login.scss
 
-5:     right: 0;
-6:     top: 22rem;
-7:     padding: 2rem 2rem 2rem 6rem;
-8:     border-radius: 16rem 0 0 16rem;
-9:     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
-10:     background-color: $login-field-color;
-11: 
-12:     input{
-13:         font-style: italic; 
-14:     }
-15: 
+8: .login-text{
+9:     left: 0;
+10:     top:5rem;
+11:     padding: 1rem 2rem 1rem 6rem;
+12:     border-radius: 0 16rem 16rem 0;
+13:     background-color: $login-bg-text-color;
+14:     font-size: 24px;
+15:     font-style: italic;
+16: 
+17:     h1{
+18:         color: white;
 
 Backtrace:
-C:/Users/JulianAndresSucerqui/Desktop/2018-02/DWA/admin-ilustraciones/sass/login.scss:10
+C:/Users/JulianAndresSucerqui/Desktop/2018-02/DWA/admin-ilustraciones/sass/login.scss:13
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -67,4 +67,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$login-field-color\".\A         on line 10 of C:/Users/JulianAndresSucerqui/Desktop/2018-02/DWA/admin-ilustraciones/sass/login.scss\A \A 5:     right: 0;\A 6:     top: 22rem;\A 7:     padding: 2rem 2rem 2rem 6rem;\A 8:     border-radius: 16rem 0 0 16rem;\A 9:     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);\A 10:     background-color: $login-field-color;\A 11: \A 12:     input{\A 13:         font-style: italic; \A 14:     }\A 15: "; }
+  content: "Error: Undefined variable: \"$login-bg-text-color\".\A         on line 13 of C:/Users/JulianAndresSucerqui/Desktop/2018-02/DWA/admin-ilustraciones/sass/login.scss\A \A 8: .login-text{\A 9:     left: 0;\A 10:     top:5rem;\A 11:     padding: 1rem 2rem 1rem 6rem;\A 12:     border-radius: 0 16rem 16rem 0;\A 13:     background-color: $login-bg-text-color;\A 14:     font-size: 24px;\A 15:     font-style: italic;\A 16: \A 17:     h1{\A 18:         color: white;"; }
