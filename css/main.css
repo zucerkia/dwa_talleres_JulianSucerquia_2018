@@ -1,0 +1,47 @@
+/* line 2, ../sass/_generals.scss */
+body {
+  margin: 0px;
+}
+
+/* line 7, ../sass/_generals.scss */
+main {
+  position: relative;
+}
+
+/* line 12, ../sass/_generals.scss */
+input {
+  display: inline-block;
+  width: 90%;
+  border-radius: 16px;
+  border: solid 1px #00000085;
+  margin: 8px 0px;
+  padding: 8px 16px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 2, ../sass/login.scss */
+.login-inputs {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  top: 22rem;
+  padding: 2rem 2rem 2rem 6rem;
+  border-radius: 16rem 0 0 16rem;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  background-color: #85be87;
+}
+/* line 12, ../sass/login.scss */
+.login-inputs input {
+  font-style: italic;
+}
+/* line 16, ../sass/login.scss */
+.login-inputs .animate {
+  width: 70%;
+  transition-property: border-radius, width;
+  transition-duration: 1s, 1s;
+}
+/* line 21, ../sass/login.scss */
+.login-inputs .animate:focus {
+  border-radius: 8px;
+  width: 90%;
+}
