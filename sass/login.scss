@@ -1,0 +1,28 @@
+
+.login-inputs{
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 22rem;
+    padding: 2rem 2rem 2rem 6rem;
+    border-radius: 16rem 0 0 16rem;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+    background-color: $login-field-color;
+
+    input{
+        font-style: italic; 
+    }
+
+    .animate{
+        width: 70%;
+        transition-property: border-radius, width;
+        transition-duration: 1s, 1s;
+         
+        &:focus{
+            border-radius: 8px;
+            width: 90%;
+
+            
+        }
+    }
+}
