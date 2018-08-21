@@ -42,11 +42,34 @@
     margin: 1rem;
     padding: 2rem;
     background-color: azure;
-    border-radius: 32px;
+    border-radius: 24px;
     border: solid 1px white; 
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
     position: relative;
     transition: border 1s;
+
+    .card-date{
+        position: absolute;
+        display: inline-block;
+        top: -1px;
+        right: -1px;
+
+        p{
+            background-color: #6f4c93;
+            border-radius: 0px 24px 0 24px;
+            color: white;
+            margin: 0px;
+            padding: 12px;
+        }
+    }
+
+    .body-card{
+        img{
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+
     
 
     .check{
@@ -86,7 +109,7 @@
 }
 
 .checklist-title{
-    padding: 1rem;
+    padding: 2rem;
     background-color: #4DB6AC;
     h1{
         color: white;

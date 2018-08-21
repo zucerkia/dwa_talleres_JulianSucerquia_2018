@@ -4,12 +4,12 @@ body {
   background-color: #209287;
 }
 
-/* line 8, ../sass/_generals.scss */
+/* line 9, ../sass/_generals.scss */
 main {
   position: relative;
 }
 
-/* line 13, ../sass/_generals.scss */
+/* line 14, ../sass/_generals.scss */
 input {
   display: inline-block;
   width: 90%;
@@ -20,17 +20,17 @@ input {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 24, ../sass/_generals.scss */
+/* line 25, ../sass/_generals.scss */
 input.invalid {
   border: 2px solid orangered !important;
 }
 
-/* line 28, ../sass/_generals.scss */
+/* line 29, ../sass/_generals.scss */
 input.valid {
   border: 2px solid green !important;
 }
 
-/* line 32, ../sass/_generals.scss */
+/* line 33, ../sass/_generals.scss */
 .d-none {
   opacity: 0 !important;
 }
@@ -179,27 +179,47 @@ input.valid {
   margin: 1rem;
   padding: 2rem;
   background-color: azure;
-  border-radius: 32px;
+  border-radius: 24px;
   border: solid 1px white;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
   position: relative;
   transition: border 1s;
 }
-/* line 52, ../sass/checklist.scss */
+/* line 51, ../sass/checklist.scss */
+.card .card-date {
+  position: absolute;
+  display: inline-block;
+  top: -1px;
+  right: -1px;
+}
+/* line 57, ../sass/checklist.scss */
+.card .card-date p {
+  background-color: #6f4c93;
+  border-radius: 0px 24px 0 24px;
+  color: white;
+  margin: 0px;
+  padding: 12px;
+}
+/* line 67, ../sass/checklist.scss */
+.card .body-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+/* line 75, ../sass/checklist.scss */
 .card .check {
   position: absolute;
   right: 8px;
   bottom: 24px;
 }
-/* line 57, ../sass/checklist.scss */
+/* line 80, ../sass/checklist.scss */
 .card .check input {
   display: none;
 }
-/* line 60, ../sass/checklist.scss */
+/* line 83, ../sass/checklist.scss */
 .card .check input:checked + label {
   background: #782486;
 }
-/* line 64, ../sass/checklist.scss */
+/* line 87, ../sass/checklist.scss */
 .card .check label {
   background-color: #9E9E9E;
   padding: 1rem;
@@ -209,22 +229,22 @@ input.valid {
   color: white;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
 }
-/* line 73, ../sass/checklist.scss */
+/* line 96, ../sass/checklist.scss */
 .card .check label:hover {
   opacity: 0.7;
 }
 
-/* line 82, ../sass/checklist.scss */
+/* line 105, ../sass/checklist.scss */
 .card.checked {
   border: solid 8px #6b74ab;
 }
 
-/* line 88, ../sass/checklist.scss */
+/* line 111, ../sass/checklist.scss */
 .checklist-title {
-  padding: 1rem;
+  padding: 2rem;
   background-color: #4DB6AC;
 }
-/* line 91, ../sass/checklist.scss */
+/* line 114, ../sass/checklist.scss */
 .checklist-title h1 {
   color: white;
   margin: 1rem 2rem;
