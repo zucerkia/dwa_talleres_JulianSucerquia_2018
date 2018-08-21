@@ -4,12 +4,12 @@ body {
   background-color: #209287;
 }
 
-/* line 8, ../sass/_generals.scss */
+/* line 9, ../sass/_generals.scss */
 main {
   position: relative;
 }
 
-/* line 13, ../sass/_generals.scss */
+/* line 14, ../sass/_generals.scss */
 input {
   display: inline-block;
   width: 90%;
@@ -20,17 +20,17 @@ input {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 24, ../sass/_generals.scss */
+/* line 25, ../sass/_generals.scss */
 input.invalid {
   border: 2px solid orangered !important;
 }
 
-/* line 28, ../sass/_generals.scss */
+/* line 29, ../sass/_generals.scss */
 input.valid {
   border: 2px solid green !important;
 }
 
-/* line 32, ../sass/_generals.scss */
+/* line 33, ../sass/_generals.scss */
 .d-none {
   opacity: 0 !important;
 }
@@ -127,41 +127,99 @@ input.valid {
   width: 90%;
 }
 
-/* line 2, ../sass/checklist.scss */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* line 4, ../sass/checklist.scss */
+  .card {
+    width: 90%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* line 9, ../sass/checklist.scss */
+  .card {
+    width: 90%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* line 15, ../sass/checklist.scss */
+  .card {
+    width: 34%;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* line 20, ../sass/checklist.scss */
+  .card {
+    width: 38%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* line 25, ../sass/checklist.scss */
+  .card {
+    width: 24%;
+  }
+}
+/* line 29, ../sass/checklist.scss */
 .content {
   background-color: #8fdb9e;
   margin: 1rem;
   position: absolute;
   border-radius: 8px;
   top: 8rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-/* line 11, ../sass/checklist.scss */
+/* line 41, ../sass/checklist.scss */
 .card {
   margin: 1rem;
   padding: 2rem;
   background-color: azure;
-  border-radius: 32px;
+  border-radius: 24px;
   border: solid 1px white;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
   position: relative;
   transition: border 1s;
 }
-/* line 22, ../sass/checklist.scss */
+/* line 51, ../sass/checklist.scss */
+.card .card-date {
+  position: absolute;
+  display: inline-block;
+  top: -1px;
+  right: -1px;
+}
+/* line 57, ../sass/checklist.scss */
+.card .card-date p {
+  background-color: #6f4c93;
+  border-radius: 0px 24px 0 24px;
+  color: white;
+  margin: 0px;
+  padding: 12px;
+}
+/* line 67, ../sass/checklist.scss */
+.card .body-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+/* line 75, ../sass/checklist.scss */
 .card .check {
   position: absolute;
   right: 8px;
   bottom: 24px;
 }
-/* line 27, ../sass/checklist.scss */
+/* line 80, ../sass/checklist.scss */
 .card .check input {
   display: none;
 }
-/* line 30, ../sass/checklist.scss */
+/* line 83, ../sass/checklist.scss */
 .card .check input:checked + label {
   background: #782486;
 }
-/* line 34, ../sass/checklist.scss */
+/* line 87, ../sass/checklist.scss */
 .card .check label {
   background-color: #9E9E9E;
   padding: 1rem;
@@ -171,12 +229,27 @@ input.valid {
   color: white;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
 }
-/* line 43, ../sass/checklist.scss */
+/* line 96, ../sass/checklist.scss */
 .card .check label:hover {
   opacity: 0.7;
 }
 
-/* line 52, ../sass/checklist.scss */
+/* line 105, ../sass/checklist.scss */
 .card.checked {
   border: solid 8px #6b74ab;
+}
+
+/* line 111, ../sass/checklist.scss */
+.checklist-title {
+  padding: 2rem;
+  background-color: #4DB6AC;
+}
+/* line 114, ../sass/checklist.scss */
+.checklist-title h1 {
+  color: white;
+  margin: 1rem 2rem;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #004D40;
 }
