@@ -13,7 +13,11 @@
     padding: 2rem;
     background-color: azure;
     border-radius: 32px;
+    border: solid 1px white; 
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
     position: relative;
+    transition: border 1s;
+    
 
     .check{
         position: absolute;
@@ -25,9 +29,6 @@
 
             &:checked + label{
                 background: #782486;    
-                // span{
-                //     content: "°";
-                // }
             }
         }
         label{
@@ -36,53 +37,20 @@
             border-radius: 12px 12px 32px 12px;           
             overflow: hidden;
             cursor: pointer;
+            color: white;
             box-shadow: 0 3px 3px rgba(0,0,0,.5);
 
             &:hover {
                 opacity: 0.7;
             }
 
-            span{
-                color: white;
-                // content: "+";
-            }
         }
     }
+    
+}
 
-    // .check{
-    //     position: absolute;
-    //     right: 8px;
-    //     bottom: 24px;
-
-    //     input{
-    //       display: none;
-
-    //       &:checked + label{
-    //         background: #5cb85c;
-    //         color: white;
-
-    //         span{
-    //           color: white;
-    //         }
-    //       }
-    //     }
-
-    //     label{
-
-    //       position: relative;
-    //       background: #fff;
-    //       border-radius: 8%;
-    //       text-align: center;
-    //       overflow: hidden;
-    //       cursor: pointer;
-    //       width:4rem;
-    //       height:4rem;
-    //       line-height:4rem;
-    //       box-shadow: 0 3px 3px rgba(0,0,0,.5);
-
-    //       &:hover {
-    //         background: #f0f0f0;
-    //       }
-    //     }
-    //   }
+.card.checked{
+    // background-color: $check-card;
+    border:solid 8px $check-card;
+    // color: white;
 }
