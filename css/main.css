@@ -194,8 +194,8 @@ input.valid {
 }
 /* line 57, ../sass/checklist.scss */
 .card .card-date p {
-  background-color: #6f4c93;
-  border-radius: 0px 24px 0 24px;
+  background-color: #6b74ab;
+  border-radius: 0px 18px 0 24px;
   color: white;
   margin: 0px;
   padding: 12px;
@@ -244,7 +244,24 @@ input.valid {
   padding: 2rem;
   background-color: #4DB6AC;
 }
-/* line 114, ../sass/checklist.scss */
+/* line 115, ../sass/checklist.scss */
+.checklist-title .add-btn {
+  position: absolute;
+  background-color: #004D40;
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 50%;
+  top: 42px;
+  color: white;
+  right: 3rem;
+  cursor: pointer;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+}
+/* line 127, ../sass/checklist.scss */
+.checklist-title .add-btn:hover {
+  background-color: #007965;
+}
+/* line 131, ../sass/checklist.scss */
 .checklist-title h1 {
   color: white;
   margin: 1rem 2rem;
