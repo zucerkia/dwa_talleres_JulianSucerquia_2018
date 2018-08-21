@@ -2,7 +2,8 @@
 body{
     margin: 0px;
     background-color: $bg-color;
-    // font-family: cursive;
+    // https://www.dafont.com/es/fondy-script.font?text=%F1%E1Lo%BF%21
+    
 }
 
 main{
@@ -19,8 +20,16 @@ input{
     padding: 8px 16px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 
-    span{
+}
 
-    }
+input.invalid{
+    border: 2px solid orangered !important; 
+}
 
+input.valid{
+    border: 2px solid green !important; 
+}
+
+.d-none{
+    opacity: 0 !important;
 }

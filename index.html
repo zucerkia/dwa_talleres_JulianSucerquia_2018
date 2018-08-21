@@ -15,9 +15,19 @@
             <h1>Log-in</h1>
         </div>
         <div class="login-shape login-inputs">
-            <input type="text" class="animate" id="" placeholder="User">
-            <input type="password" class="animate" id="" placeholder="Password">
+            <div id="login-error" class="login-error d-none">
+                <p id="error-messaje"></p>
+            </div>
+            <input type="email" class="animate required" id="email" placeholder="User">
+            <input type="password" class="animate required" id="password" placeholder="Password">
+            <div class="login-btn">
+                <a id="btn-validate" href="javascript:void(0);"><p>Accept</p></a>
+                <a id="btn-accept" href="checklist.html"></a>
+            </div>
         </div>
+        
     </main>
+    <script src="js/main.js"></script>
+    
 </body>
 </html>
