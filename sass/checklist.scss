@@ -1,10 +1,40 @@
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .card {width: 90%;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .card {width: 90%;}
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .card {width: 34%;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .card {width: 38%;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .card {width: 24%;}
+}
+
+
 .content{
     background-color: $content-color;
     margin: 1rem;
     position: absolute;
     border-radius: 8px;
     top:8rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 
 }
 
@@ -53,4 +83,17 @@
     // background-color: $check-card;
     border:solid 8px $check-card;
     // color: white;
+}
+
+.checklist-title{
+    padding: 1rem;
+    background-color: #4DB6AC;
+    h1{
+        color: white;
+        margin: 1rem 2rem;
+        display: inline-block;
+        padding: 1rem;
+        border-radius: 8px;
+        background-color: #004D40;
+    }
 }
