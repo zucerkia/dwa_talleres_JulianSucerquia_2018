@@ -2,10 +2,11 @@
 body{
     margin: 0px;
     background-color: $bg-color;
-    // https://www.dafont.com/es/fondy-script.font?text=%F1%E1Lo%BF%21
     
 }
-
+*{
+    font-family: 'VarelaRound';
+}
 main{
     position: relative;
 }
