@@ -1,0 +1,18 @@
+
+
+
+
+
+.content{
+    background-color: #B2BABB;
+    height: calc(100vh - #{$v-margin-content*2});
+    overflow: hidden;
+    margin: $v-margin-content;
+    border-radius: 16px;
+    position: relative;
+
+}
+
+// .navbar{
+//     background-color: red;
+// }
