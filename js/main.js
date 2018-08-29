@@ -97,7 +97,7 @@ function verifyEmail(){
         fields[0].className += " invalid";
         isWrong(fields[0]);
         isValid = false;
-        showErrorMessaje("It´s not an email");
+        showErrorMessaje("It is not an email");
         
     }
 
@@ -141,7 +141,7 @@ function verifyData(data){
         fields[0].className += " invalid";
         isWrong(fields[0]);
         isValid = false;
-        showErrorMessaje("Email doesn´t exist");
+        showErrorMessaje("Email does not exist");
         
     } 
     return isValid;
