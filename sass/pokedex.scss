@@ -29,12 +29,6 @@ header{
         left: 0%;
         width: 100%;
 
-        
-        // p{
-        //     padding: 0;
-        //     display: inline;
-        // }
-
     }
 
     .nav-deco{
@@ -66,7 +60,7 @@ header{
             right: -24px;
             top: 49px;
             
-          }
+        }
         .lights{
             position: absolute;
             width: 25px;
@@ -94,7 +88,6 @@ header{
             top: 13px;
             left: 16%;
             background: #36BDCD;
-            // box-shadow: 4px 6px 16px inset #49ddee;
             border: 4px solid white;
         
         }
@@ -102,3 +95,87 @@ header{
     }
 
 }
+.pokemon-card{
+    margin: 4rem 1rem 0rem 1rem;
+    text-align: center;
+   
+    .pokemon-header{
+        
+        height: 16vh;
+        position: relative;
+        border-radius: 0 12px 0 0;
+        background: white;
+        display: inline-block;
+        width: 100%;
+
+        &:before{
+            position: absolute;
+            content: "";
+            width: 45%;
+            height: 41px;
+            background: white;
+            left: 0px;
+            top: -41px;
+            border-radius: 12px 12px 0 0;
+        }
+        
+        .pokemon-tag{
+            position: absolute;
+            height: 41px;
+            width: 45%;
+            left: 0px;
+            top: -41px;
+            text-align: center;
+
+            .pokemon-name{
+            
+                margin: 14px;
+                word-wrap: break-word;
+
+            }
+        }
+
+        .pokemon{
+            position: absolute;
+            width: 120px;
+            left: 50%;
+            top: -106px;
+        }
+
+    }
+
+    .pokemon-stats{
+        
+        height: 17vh;
+        position: relative;
+        border-radius: 0 0 12px 12px;
+        background: white;
+        display: inline-block;
+        width: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+        .pokemon-stats{
+            width: 45%;
+            vertical-align: top;
+            border-radius: 12px;
+            margin-left: 2rem;
+            height:40vh;
+
+        }
+        .pokemon-header{
+            width: 45%;
+            vertical-align: top;
+            border-radius: 0 12px 12px 12px;
+            height:40vh;
+
+            .pokemon{
+                left: 32%;
+                margin-top: 2rem;
+                top:0;
+            }
+        }
+    }
+   
+}
+
