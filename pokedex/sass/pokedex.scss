@@ -28,9 +28,7 @@ header{
         top: 0px;
         left: 0%;
         width: 100%;
-
     }
-
     .nav-deco{
         position: relative;
         width: 37.5%;
@@ -142,6 +140,11 @@ header{
             top: -106px;
         }
 
+        // .type{
+        //     position: absolute;
+        //     width: 140px;
+        // }
+
     }
 
     .pokemon-stats{
@@ -211,13 +214,18 @@ header{
             width: 45%;
             vertical-align: top;
             border-radius: 0 12px 12px 12px;
-            height:40vh;
+            height:55vh;
 
             .pokemon{
                 left: 32%;
                 margin-top: 2rem;
                 top:0;
             }
+
+            // .type{
+            //     bottom: 64px;
+            //     left: 25%;
+            // }
         }
     }
    
