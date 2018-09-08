@@ -76,7 +76,7 @@ header{
                 width: 18px;
                 height: 18px;
                 top: 19px;
-                left: 14rem;
+                left: 16rem;
             }
         }
 
@@ -163,26 +163,7 @@ header{
                 padding: 15px;
                 border-radius: 12px;
                 position: relative;
-                // border: 2px solid gray;
-                // &:after{
-                //     position: absolute;
-                //     content: "";
-                //     top: 18px;
-                //     left: -4px;
-                //     width: 10px;
-                //     height: 49px;
-                //     background: white;       
-
-                // }
-                // &:before{
-                //     position: absolute;
-                //     content: "";
-                //     top: 18px;
-                //     right: -4px;
-                //     width: 10px;
-                //     height: 49px;
-                //     background: white;
-                // }
+             
                 div{
                  
                     p{
@@ -218,7 +199,6 @@ header{
             margin-top: -4px;
         }
     }
-// corregir este mediaquery -> ponerlo dentro de casa item
     @media only screen and (min-width: 600px) {
         .pokemon-stats{
             width: 45%;
@@ -256,14 +236,14 @@ footer{
         li.more-pokemons{
             width: 50px;
             height: 50px;
-            background: white;
+            background: #d5c5c5;
             display: inline-block;
             border-radius: 8px;
             margin: 6px; 
             cursor: pointer;
             
             &:hover{
-                background: lightgrey;
+                background: white;
             }
 
             &:first-child{
@@ -275,7 +255,6 @@ footer{
 
                 p{
                     margin: 0px;
-                    font-size: 20px;
                     line-height: 3rem;
                     color: white;
                 }

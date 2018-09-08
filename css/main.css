@@ -1,4 +1,17 @@
-/* line 4, ../sass/_generals.scss */
+@font-face {
+  font-family: "PokemonClassic";
+  src: url("../fonts/Pokemon-Classic/Pokemon-Classic.eot");
+  src: url("../fonts/Pokemon-Classic/Pokemon-Classic.eot?#iefix") format("embedded-opentype"), url("../fonts/Pokemon-Classic/Pokemon-Classic.woff") format("woff"), url("../fonts/Pokemon-Classic/Pokemon-Classic.ttf") format("truetype"), url("../fonts/Pokemon-Classic/Pokemon-Classic.svg#PokemonClassic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 2, ../sass/_generals.scss */
+* {
+  font-family: 'PokemonClassic';
+  font-size: 12px;
+}
+
+/* line 7, ../sass/_generals.scss */
 body {
   margin: 0%;
   background-color: #C0392B;
@@ -79,7 +92,7 @@ header .nav-deco .lights {
     width: 18px;
     height: 18px;
     top: 19px;
-    left: 14rem;
+    left: 16rem;
   }
 }
 /* line 83, ../sass/pokedex.scss */
@@ -162,29 +175,29 @@ header .nav-deco .camera {
   border-radius: 12px;
   position: relative;
 }
-/* line 188, ../sass/pokedex.scss */
+/* line 169, ../sass/pokedex.scss */
 .pokemon-card .pokemon-stats .stats-container .stats div p {
   margin: 0px;
 }
 @media only screen and (max-width: 600px) {
-  /* line 186, ../sass/pokedex.scss */
+  /* line 167, ../sass/pokedex.scss */
   .pokemon-card .pokemon-stats .stats-container .stats div {
     width: 40%;
     display: inline-block;
   }
 }
-/* line 197, ../sass/pokedex.scss */
+/* line 178, ../sass/pokedex.scss */
 .pokemon-card .pokemon-stats .stats-container .stats .stat-name {
   position: relative;
   margin: 10px 0;
 }
 @media only screen and (max-width: 600px) {
-  /* line 197, ../sass/pokedex.scss */
+  /* line 178, ../sass/pokedex.scss */
   .pokemon-card .pokemon-stats .stats-container .stats .stat-name {
     margin: 0px;
   }
 }
-/* line 205, ../sass/pokedex.scss */
+/* line 186, ../sass/pokedex.scss */
 .pokemon-card .pokemon-stats .stats-container .stats .stat-value {
   font-weight: bolder;
 }
@@ -204,21 +217,21 @@ header .nav-deco .camera {
   }
 }
 @media only screen and (min-width: 600px) {
-  /* line 223, ../sass/pokedex.scss */
+  /* line 203, ../sass/pokedex.scss */
   .pokemon-card .pokemon-stats {
     width: 45%;
     vertical-align: top;
     border-radius: 12px;
     margin-left: 2rem;
   }
-  /* line 230, ../sass/pokedex.scss */
+  /* line 210, ../sass/pokedex.scss */
   .pokemon-card .pokemon-header {
     width: 45%;
     vertical-align: top;
     border-radius: 0 12px 12px 12px;
     height: 40vh;
   }
-  /* line 236, ../sass/pokedex.scss */
+  /* line 216, ../sass/pokedex.scss */
   .pokemon-card .pokemon-header .pokemon {
     left: 32%;
     margin-top: 2rem;
@@ -226,7 +239,7 @@ header .nav-deco .camera {
   }
 }
 
-/* line 247, ../sass/pokedex.scss */
+/* line 227, ../sass/pokedex.scss */
 footer ul.more-container {
   position: absolute;
   bottom: 0;
@@ -236,36 +249,35 @@ footer ul.more-container {
   margin: 0;
   text-align: center;
 }
-/* line 256, ../sass/pokedex.scss */
+/* line 236, ../sass/pokedex.scss */
 footer ul.more-container li.more-pokemons {
   width: 50px;
   height: 50px;
-  background: white;
+  background: #d5c5c5;
   display: inline-block;
   border-radius: 8px;
   margin: 6px;
   cursor: pointer;
 }
-/* line 265, ../sass/pokedex.scss */
+/* line 245, ../sass/pokedex.scss */
 footer ul.more-container li.more-pokemons:hover {
-  background: lightgrey;
+  background: white;
 }
-/* line 269, ../sass/pokedex.scss */
+/* line 249, ../sass/pokedex.scss */
 footer ul.more-container li.more-pokemons:first-child {
   background: transparent;
   border: none;
   vertical-align: top;
   margin-right: 3rem;
 }
-/* line 276, ../sass/pokedex.scss */
+/* line 256, ../sass/pokedex.scss */
 footer ul.more-container li.more-pokemons:first-child p {
   margin: 0px;
-  font-size: 20px;
   line-height: 3rem;
   color: white;
 }
 @media only screen and (max-width: 600px) {
-  /* line 269, ../sass/pokedex.scss */
+  /* line 249, ../sass/pokedex.scss */
   footer ul.more-container li.more-pokemons:first-child {
     width: 100%;
     height: 55px;
