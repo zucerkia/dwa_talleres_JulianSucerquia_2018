@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "PokemonClassic";
+  src: url("../fonts/Pokemon-Classic/Pokemon-Classic.eot");
+  src: url("../fonts/Pokemon-Classic/Pokemon-Classic.eot?#iefix") format("embedded-opentype"), url("../fonts/Pokemon-Classic/Pokemon-Classic.woff") format("woff"), url("../fonts/Pokemon-Classic/Pokemon-Classic.ttf") format("truetype"), url("../fonts/Pokemon-Classic/Pokemon-Classic.svg#PokemonClassic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

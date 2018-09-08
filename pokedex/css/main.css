@@ -1,0 +1,286 @@
+@font-face {
+  font-family: "PokemonClassic";
+  src: url("../fonts/Pokemon-Classic/Pokemon-Classic.eot");
+  src: url("../fonts/Pokemon-Classic/Pokemon-Classic.eot?#iefix") format("embedded-opentype"), url("../fonts/Pokemon-Classic/Pokemon-Classic.woff") format("woff"), url("../fonts/Pokemon-Classic/Pokemon-Classic.ttf") format("truetype"), url("../fonts/Pokemon-Classic/Pokemon-Classic.svg#PokemonClassic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 2, ../sass/_generals.scss */
+* {
+  font-family: 'PokemonClassic';
+  font-size: 12px;
+}
+
+/* line 7, ../sass/_generals.scss */
+body {
+  margin: 0%;
+  background-color: #C0392B;
+}
+
+/* line 6, ../sass/pokedex.scss */
+.content {
+  background-color: #F1948A;
+  height: calc(100vh - 2rem);
+  overflow: hidden;
+  margin: 1rem;
+  border-radius: 16px;
+  position: relative;
+}
+
+/* line 16, ../sass/pokedex.scss */
+header {
+  position: relative;
+}
+/* line 20, ../sass/pokedex.scss */
+header .navbar {
+  background-color: #CCD1D1;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  display: inline-block;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  width: 100%;
+}
+/* line 32, ../sass/pokedex.scss */
+header .nav-deco {
+  position: relative;
+  width: 37.5%;
+  border-bottom-right-radius: 30px;
+  background: #CCD1D1;
+  border: 0.1px solid #CCD1D1;
+  display: inline-block;
+  height: 100px;
+}
+/* line 41, ../sass/pokedex.scss */
+header .nav-deco:after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 30px 0 0 0;
+  background: #F1948A;
+  right: -50px;
+  top: 50px;
+}
+/* line 52, ../sass/pokedex.scss */
+header .nav-deco:before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: #CCD1D1;
+  right: -24px;
+  top: 49px;
+}
+/* line 62, ../sass/pokedex.scss */
+header .nav-deco .lights {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 38px;
+  left: 80%;
+  background: #26A741;
+  border-radius: 50%;
+  box-shadow: -35px 0px #D68910,  -73px 0px #EE4834;
+}
+@media only screen and (max-width: 600px) {
+  /* line 62, ../sass/pokedex.scss */
+  header .nav-deco .lights {
+    width: 18px;
+    height: 18px;
+    top: 19px;
+    left: 16rem;
+  }
+}
+/* line 81, ../sass/pokedex.scss */
+header .nav-deco .camera {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  top: 13px;
+  left: 16%;
+  background: #36BDCD;
+  border: 4px solid white;
+}
+
+/* line 96, ../sass/pokedex.scss */
+.pokemon-card {
+  margin: 4rem 1rem 0rem 1rem;
+  text-align: center;
+}
+/* line 100, ../sass/pokedex.scss */
+.pokemon-card .pokemon-header {
+  height: 12vh;
+  position: relative;
+  border-radius: 0 12px 0 0;
+  background: white;
+  display: inline-block;
+  width: 100%;
+}
+/* line 109, ../sass/pokedex.scss */
+.pokemon-card .pokemon-header:before {
+  position: absolute;
+  content: "";
+  width: 45%;
+  height: 41px;
+  background: white;
+  left: 0px;
+  top: -41px;
+  border-radius: 12px 12px 0 0;
+}
+/* line 120, ../sass/pokedex.scss */
+.pokemon-card .pokemon-header .pokemon-tag {
+  position: absolute;
+  height: 41px;
+  width: 45%;
+  left: 0px;
+  top: -41px;
+  text-align: center;
+}
+/* line 128, ../sass/pokedex.scss */
+.pokemon-card .pokemon-header .pokemon-tag .pokemon-name {
+  margin: 14px;
+  word-wrap: break-word;
+}
+/* line 136, ../sass/pokedex.scss */
+.pokemon-card .pokemon-header .pokemon {
+  position: absolute;
+  width: 120px;
+  left: 50%;
+  top: -106px;
+}
+/* line 150, ../sass/pokedex.scss */
+.pokemon-card .pokemon-stats {
+  position: relative;
+  border-radius: 0 0 12px 12px;
+  background: white;
+  display: inline-block;
+  width: 100%;
+}
+/* line 158, ../sass/pokedex.scss */
+.pokemon-card .pokemon-stats .stats-container {
+  padding: 0;
+  list-style: none;
+}
+/* line 162, ../sass/pokedex.scss */
+.pokemon-card .pokemon-stats .stats-container .stats {
+  display: inline-block;
+  width: 25%;
+  margin: 12px;
+  padding: 15px;
+  border-radius: 12px;
+  position: relative;
+}
+/* line 172, ../sass/pokedex.scss */
+.pokemon-card .pokemon-stats .stats-container .stats div p {
+  margin: 0px;
+}
+@media only screen and (max-width: 600px) {
+  /* line 170, ../sass/pokedex.scss */
+  .pokemon-card .pokemon-stats .stats-container .stats div {
+    width: 40%;
+    display: inline-block;
+  }
+}
+/* line 181, ../sass/pokedex.scss */
+.pokemon-card .pokemon-stats .stats-container .stats .stat-name {
+  position: relative;
+  margin: 10px 0;
+}
+@media only screen and (max-width: 600px) {
+  /* line 181, ../sass/pokedex.scss */
+  .pokemon-card .pokemon-stats .stats-container .stats .stat-name {
+    margin: 0px;
+  }
+}
+/* line 189, ../sass/pokedex.scss */
+.pokemon-card .pokemon-stats .stats-container .stats .stat-value {
+  font-weight: bolder;
+}
+@media only screen and (max-width: 600px) {
+  /* line 162, ../sass/pokedex.scss */
+  .pokemon-card .pokemon-stats .stats-container .stats {
+    width: 90%;
+    padding: 6px;
+    margin: 6px;
+    border: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 150, ../sass/pokedex.scss */
+  .pokemon-card .pokemon-stats {
+    margin-top: -4px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* line 206, ../sass/pokedex.scss */
+  .pokemon-card .pokemon-stats {
+    width: 45%;
+    vertical-align: top;
+    border-radius: 12px;
+    margin-left: 2rem;
+  }
+  /* line 213, ../sass/pokedex.scss */
+  .pokemon-card .pokemon-header {
+    width: 45%;
+    vertical-align: top;
+    border-radius: 0 12px 12px 12px;
+    height: 55vh;
+  }
+  /* line 219, ../sass/pokedex.scss */
+  .pokemon-card .pokemon-header .pokemon {
+    left: 32%;
+    margin-top: 2rem;
+    top: 0;
+  }
+}
+
+/* line 235, ../sass/pokedex.scss */
+footer ul.more-container {
+  position: absolute;
+  bottom: 0;
+  background-color: #3d183e;
+  width: 100%;
+  padding: 0px 0px 8px 0px;
+  margin: 0;
+  text-align: center;
+}
+/* line 244, ../sass/pokedex.scss */
+footer ul.more-container li.more-pokemons {
+  width: 50px;
+  height: 50px;
+  background: #d5c5c5;
+  display: inline-block;
+  border-radius: 8px;
+  margin: 6px;
+  cursor: pointer;
+}
+/* line 253, ../sass/pokedex.scss */
+footer ul.more-container li.more-pokemons:hover {
+  background: white;
+}
+/* line 257, ../sass/pokedex.scss */
+footer ul.more-container li.more-pokemons:first-child {
+  background: transparent;
+  border: none;
+  vertical-align: top;
+  margin-right: 3rem;
+}
+/* line 264, ../sass/pokedex.scss */
+footer ul.more-container li.more-pokemons:first-child p {
+  margin: 0px;
+  line-height: 3rem;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  /* line 257, ../sass/pokedex.scss */
+  footer ul.more-container li.more-pokemons:first-child {
+    width: 100%;
+    height: 55px;
+    margin: 0;
+  }
+}
