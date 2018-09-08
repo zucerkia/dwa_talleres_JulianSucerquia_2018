@@ -101,7 +101,7 @@ header{
    
     .pokemon-header{
         
-        height: 16vh;
+        height: 12vh;
         position: relative;
         border-radius: 0 12px 0 0;
         background: white;
@@ -146,21 +146,85 @@ header{
 
     .pokemon-stats{
         
-        height: 17vh;
         position: relative;
         border-radius: 0 0 12px 12px;
         background: white;
         display: inline-block;
         width: 100%;
-    }
 
+        .stats-container{
+            padding: 0;
+            list-style: none;
+
+            .stats{
+                display: inline-block;
+                width: 25%;
+                margin: 12px;
+                padding: 15px;
+                border-radius: 12px;
+                position: relative;
+                // border: 2px solid gray;
+                // &:after{
+                //     position: absolute;
+                //     content: "";
+                //     top: 18px;
+                //     left: -4px;
+                //     width: 10px;
+                //     height: 49px;
+                //     background: white;       
+
+                // }
+                // &:before{
+                //     position: absolute;
+                //     content: "";
+                //     top: 18px;
+                //     right: -4px;
+                //     width: 10px;
+                //     height: 49px;
+                //     background: white;
+                // }
+                div{
+                 
+                    p{
+                        margin: 0px;
+                    }
+
+                    @media only screen and (max-width: 600px) {
+                        width: 40%;
+                        display: inline-block;
+                    }
+                }
+                .stat-name{
+                    position: relative;
+                    margin: 10px 0;
+                   
+                    @media only screen and (max-width: 600px) {
+                        margin: 0px;
+                    }
+                }
+                .stat-value{
+                    font-weight: bolder;
+                }
+
+                @media only screen and (max-width: 600px) {
+                    width: 90%;
+                    padding: 6px;
+                    margin: 6px;
+                    border: none;
+                }
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            margin-top: -4px;
+        }
+    }
+// corregir este mediaquery -> ponerlo dentro de casa item
     @media only screen and (min-width: 600px) {
         .pokemon-stats{
             width: 45%;
             vertical-align: top;
             border-radius: 12px;
             margin-left: 2rem;
-            height:40vh;
 
         }
         .pokemon-header{
@@ -185,7 +249,7 @@ footer{
         bottom: 0;
         background-color: #3d183e;
         width: 100%;
-        padding: 8px 0px 8px 0px;
+        padding: 0px 0px 8px 0px;
         margin: 0;
         text-align: center;
 
