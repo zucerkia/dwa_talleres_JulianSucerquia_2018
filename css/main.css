@@ -101,7 +101,7 @@ header .nav-deco .camera {
 }
 /* line 102, ../sass/pokedex.scss */
 .pokemon-card .pokemon-header {
-  height: 16vh;
+  height: 12vh;
   position: relative;
   border-radius: 0 12px 0 0;
   background: white;
@@ -142,30 +142,83 @@ header .nav-deco .camera {
 }
 /* line 147, ../sass/pokedex.scss */
 .pokemon-card .pokemon-stats {
-  height: 17vh;
   position: relative;
   border-radius: 0 0 12px 12px;
   background: white;
   display: inline-block;
   width: 100%;
 }
+/* line 155, ../sass/pokedex.scss */
+.pokemon-card .pokemon-stats .stats-container {
+  padding: 0;
+  list-style: none;
+}
+/* line 159, ../sass/pokedex.scss */
+.pokemon-card .pokemon-stats .stats-container .stats {
+  display: inline-block;
+  width: 25%;
+  margin: 12px;
+  padding: 15px;
+  border-radius: 12px;
+  position: relative;
+}
+/* line 188, ../sass/pokedex.scss */
+.pokemon-card .pokemon-stats .stats-container .stats div p {
+  margin: 0px;
+}
+@media only screen and (max-width: 600px) {
+  /* line 186, ../sass/pokedex.scss */
+  .pokemon-card .pokemon-stats .stats-container .stats div {
+    width: 40%;
+    display: inline-block;
+  }
+}
+/* line 197, ../sass/pokedex.scss */
+.pokemon-card .pokemon-stats .stats-container .stats .stat-name {
+  position: relative;
+  margin: 10px 0;
+}
+@media only screen and (max-width: 600px) {
+  /* line 197, ../sass/pokedex.scss */
+  .pokemon-card .pokemon-stats .stats-container .stats .stat-name {
+    margin: 0px;
+  }
+}
+/* line 205, ../sass/pokedex.scss */
+.pokemon-card .pokemon-stats .stats-container .stats .stat-value {
+  font-weight: bolder;
+}
+@media only screen and (max-width: 600px) {
+  /* line 159, ../sass/pokedex.scss */
+  .pokemon-card .pokemon-stats .stats-container .stats {
+    width: 90%;
+    padding: 6px;
+    margin: 6px;
+    border: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 147, ../sass/pokedex.scss */
+  .pokemon-card .pokemon-stats {
+    margin-top: -4px;
+  }
+}
 @media only screen and (min-width: 600px) {
-  /* line 158, ../sass/pokedex.scss */
+  /* line 223, ../sass/pokedex.scss */
   .pokemon-card .pokemon-stats {
     width: 45%;
     vertical-align: top;
     border-radius: 12px;
     margin-left: 2rem;
-    height: 40vh;
   }
-  /* line 166, ../sass/pokedex.scss */
+  /* line 230, ../sass/pokedex.scss */
   .pokemon-card .pokemon-header {
     width: 45%;
     vertical-align: top;
     border-radius: 0 12px 12px 12px;
     height: 40vh;
   }
-  /* line 172, ../sass/pokedex.scss */
+  /* line 236, ../sass/pokedex.scss */
   .pokemon-card .pokemon-header .pokemon {
     left: 32%;
     margin-top: 2rem;
@@ -173,17 +226,17 @@ header .nav-deco .camera {
   }
 }
 
-/* line 183, ../sass/pokedex.scss */
+/* line 247, ../sass/pokedex.scss */
 footer ul.more-container {
   position: absolute;
   bottom: 0;
   background-color: #3d183e;
   width: 100%;
-  padding: 8px 0px 8px 0px;
+  padding: 0px 0px 8px 0px;
   margin: 0;
   text-align: center;
 }
-/* line 192, ../sass/pokedex.scss */
+/* line 256, ../sass/pokedex.scss */
 footer ul.more-container li.more-pokemons {
   width: 50px;
   height: 50px;
@@ -193,18 +246,18 @@ footer ul.more-container li.more-pokemons {
   margin: 6px;
   cursor: pointer;
 }
-/* line 201, ../sass/pokedex.scss */
+/* line 265, ../sass/pokedex.scss */
 footer ul.more-container li.more-pokemons:hover {
   background: lightgrey;
 }
-/* line 205, ../sass/pokedex.scss */
+/* line 269, ../sass/pokedex.scss */
 footer ul.more-container li.more-pokemons:first-child {
   background: transparent;
   border: none;
   vertical-align: top;
   margin-right: 3rem;
 }
-/* line 212, ../sass/pokedex.scss */
+/* line 276, ../sass/pokedex.scss */
 footer ul.more-container li.more-pokemons:first-child p {
   margin: 0px;
   font-size: 20px;
@@ -212,7 +265,7 @@ footer ul.more-container li.more-pokemons:first-child p {
   color: white;
 }
 @media only screen and (max-width: 600px) {
-  /* line 205, ../sass/pokedex.scss */
+  /* line 269, ../sass/pokedex.scss */
   footer ul.more-container li.more-pokemons:first-child {
     width: 100%;
     height: 55px;
