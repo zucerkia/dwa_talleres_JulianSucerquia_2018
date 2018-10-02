@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+$v-margin-content : 1rem;
+$bg-color:#C0392B;
+$nb-radius:30px;
+$nb-color:#CCD1D1;
+$card-color:#F1948A;
+
+*{
+    font-family: 'PokemonClassic';
+    font-size: 12px;
+}
+
+body{
+    margin: 0%;
+    background-color: $bg-color;
+}
