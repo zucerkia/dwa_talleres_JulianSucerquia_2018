@@ -14,7 +14,7 @@ export class MainComponent implements OnInit {
     this.pokeapi.getAllPokemons()
     .subscribe((data:any)=>{
       this.pokemons = data;
-      console.log(data);
+      // console.log(data);
 
     })
 

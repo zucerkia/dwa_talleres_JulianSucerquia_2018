@@ -1,59 +1,10 @@
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .card {width: 50%;}
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .card {width: calc(100%/3)}
-} 
-
-
 .cards-container{
     background: white;
     overflow-y: auto;
     height: 75vh;
     margin: 2rem;
     border-radius: 11px;
-    display: flex;
-    flex-flow: row wrap;
+    list-style: none;
+    padding: 0;
     justify-content: center;
-}
-
-.card{
-    text-align: center;
-    position: relative;
-    margin-bottom: 1rem;
-
-    .card-image{
-        padding: 1rem;
-        position: relative;
-        img{
-            width: 100%;
-            background: #F2F2F2;
-            border-radius: 5px;
-        }
-        .card-text{
-            // position: absolute;
-            // background: violet;
-            // border-radius: 25%;
-            // bottom: 0;
-            // left: 0;
-            h5{
-                font-family: "Flexo-Demi",arial,sans-serif;
-                margin: 0;
-                font-size: 18px;
-
-            }
-        }
-        &:hover{
-            cursor: pointer;
-        }
-    }
-    // background-color: azure;
-    // border-radius: 24px;
-    // border: solid 1px white; 
-    // box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
-    // position: relative;
 }
