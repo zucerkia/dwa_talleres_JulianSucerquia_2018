@@ -6,12 +6,14 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { MainComponent } from './pages/main/main.component';
+import { CardsComponent } from './components/cards/cards.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MainComponent
+    MainComponent,
+    CardsComponent
   ],
   imports: [
     HttpClientModule,

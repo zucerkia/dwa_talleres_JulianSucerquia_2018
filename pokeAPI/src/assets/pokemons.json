@@ -1,0 +1,100 @@
+[
+    {
+        "id":"001",
+        "name":"bulbasaur",
+        "types":["poison","grass"],
+        "abilities":["chlorophyll","overgrow"],
+        "height":"7",
+        "weight":"69",
+        "image":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+    },
+    {
+        "id":"010",
+        "name":"caterpie",
+        "types":["bug"],
+        "abilities":["run-away","shield-dust"],
+        "height":"3",
+        "weight":"29",
+        "image":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
+  
+    },
+    {
+        "id":"050",
+        "name":"diglett",
+        "types":["ground"],
+        "abilities":["sand-force","arena-trap","sand-veil"],
+        "height":"2",
+        "weight":"8",
+        "image":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png"
+  
+    },
+    {
+        "id":"100",
+        "name":"voltorb",
+        "types":["electric"],
+        "abilities":["aftermath","static","soundproof"],
+        "height":"5",
+        "weight":"104",
+        "image":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png"  
+    },
+    {
+        "id":"150",
+        "name":"mewtwo",
+        "types":["psychic"],
+        "abilities":["unnerve","pressure"],
+        "height":"20",
+        "weight":"1220",
+        "image":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png"  
+  
+    },
+    {
+        "id":"200",
+        "name":"misdreavus",
+        "types":["ghost"],
+        "abilities":["levitate"],
+        "height":"7",
+        "weight":"10",
+        "image":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png"  
+  
+    },
+    {
+        "id":"250",
+        "name":"ho-oh",
+        "types":["flying","fire"],
+        "abilities":["regenerator","pressure"],
+        "height":"38",
+        "weight":"1990",
+        "image":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png"  
+  
+    },
+    {
+        "id":"300",
+        "name":"skitty",
+        "types":["normal"],
+        "abilities":["wonder-skin","normalize","cute-charm"],
+        "height":"6",
+        "weight":"110",
+        "image":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/300.png"  
+ 
+    },
+    {
+        "id":"350",
+        "name":"milotic",
+        "types":["water"],
+        "abilities":["cute-charm","competitive","marvel-scale"],
+        "height":"62",
+        "weight":"1620",
+        "image":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/350.png"  
+  
+    },
+    {
+        "id":"400",
+        "name":"bibarel",
+        "types":["water","normal"],
+        "abilities":["moody","unaware","simple"],
+        "height":"10",
+        "weight":"315",
+        "image":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/400.png"  
+  
+    }
+]
