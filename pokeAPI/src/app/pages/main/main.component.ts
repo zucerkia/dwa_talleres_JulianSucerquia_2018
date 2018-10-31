@@ -14,9 +14,10 @@ export class MainComponent implements OnInit {
     this.pokeapi.getAllPokemons()
     .subscribe((data:any)=>{
       this.pokemons = data;
-      console.log(this.pokemons);
+      console.log(data);
 
     })
+
    }
   ngOnInit() {
   }

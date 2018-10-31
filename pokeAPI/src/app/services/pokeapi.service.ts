@@ -9,18 +9,14 @@ export class PokeapiService {
 
   constructor(private http:HttpClient) { }
 
-  getQuery(query:string){
-    const url = `https://pokeapi.co/api/v2/${query}`;
+  getAllPokemons(){
+    const url = "../../assets/pokemons.json";
     return this.http.get(url);
   }
 
-  getAllPokemons(){
-    return this.getQuery('pokemon/')
-    .pipe(map(data=>data['results']));
-  }
+  
 
   getPokemon(name:string){
-    return this.getQuery(`pokemon/${name}`);
   }
 
 
