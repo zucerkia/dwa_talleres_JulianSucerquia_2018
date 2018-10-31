@@ -1,22 +1,15 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { PokeapiService } from '../../services/pokeapi.service'
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-cards',
   templateUrl: './cards.component.html',
   styleUrls: ['./cards.component.scss']
 })
-export class CardsComponent implements OnInit {
+export class CardsComponent{
 
   @Input() items:any[];
 
-  constructor(private pokeapi:PokeapiService) {
+  constructor() {
    }
-
-  ngOnInit() {
-    console.log(this.items);
-
-  }
-
 
 }

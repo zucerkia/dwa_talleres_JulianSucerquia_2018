@@ -5,19 +5,25 @@ import {map} from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
+
 export class PokeapiService {
+
+  url = "../../assets/pokemons.json";
 
   constructor(private http:HttpClient) { }
 
   getAllPokemons(){
-    const url = "../../assets/pokemons.json";
-    return this.http.get(url);
+    return this.http.get(this.url);
   }
 
-  
+  // getPokemon(id:number){
+  //   let pokemons;
+  //   this.http.get(this.url)
+    
 
-  getPokemon(name:string){
-  }
+  //   console.log(pokemons);
+
+  // }
 
 
 }
