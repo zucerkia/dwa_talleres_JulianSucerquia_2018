@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PokeapiService } from '../../services/pokeapi.service';
+import { Router } from '@angular/router';
 
 
 
@@ -13,9 +14,11 @@ export class PokeInfoComponent implements OnInit {
 
   pokemon:any={}
   constructor(private activateRoute:ActivatedRoute,
-              private pokeapi:PokeapiService) {
+              private pokeapi:PokeapiService,
+              private router:Router) {
 
-      this.activateRoute.params.subscribe(params=>{
+      this.activateRoute.params
+      .subscribe(params=>{
         this.pokemon = this.pokeapi.getAllPokemons()
         .subscribe((data:any)=>{
           this.pokemon = data[params['index']];
@@ -26,6 +29,10 @@ export class PokeInfoComponent implements OnInit {
   ngOnInit() {
   }
 
+  backMain(){
+    this.router.navigate(['/main'])
+
+  }
 
 
 }
