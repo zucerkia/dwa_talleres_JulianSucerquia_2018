@@ -1,0 +1,63 @@
+<section class="pokemon-card">
+                    
+    <div class="pokemon-header">
+        <div class="pokemon-tag">
+            <h2 class="pokemon-name">{{pokemon.name | uppercase }}</h2>
+        </div>
+        <img class="pokemon" [src]=pokemon.image>
+      
+    </div>
+    <div class="pokemon-stats">
+        <ul class="stats-container">
+            <li class="stats">
+                <div class="stat-name">
+                    <p>NO.</p>
+                </div>
+                <div class="stat-value">
+                    <p>{{pokemon.id}}</p>
+                </div>
+            </li>
+             <li class="stats">
+                <div class="stat-name">
+                    <p>LEVEL</p>
+                </div>
+                <div class="stat-value">
+                    <p>100</p>
+                </div>
+            </li>
+             <li class="stats">
+                <div class="stat-name">
+                    <p>TYPE</p>
+                </div>
+                <div class="stat-value">
+                    <p>{{pokemon.types}}</p>
+                </div>
+            </li>
+             <li class="stats">
+                <div class="stat-name">
+                    <p>ABILITY</p>
+                </div>
+                <div class="stat-value">
+                    <p>{{pokemon.abilities}}</p>
+                </div>
+            </li>
+             <li class="stats">
+                <div class="stat-name">
+                    <p>HEIGHT</p>
+                </div>
+                <div class="stat-value">
+                    <p>{{pokemon.height}}</p>
+                </div>
+            </li>
+             <li class="stats">
+                <div class="stat-name">
+                    <p>WEIGHT</p>
+                </div>
+                <div class="stat-value">
+                    <p>{{pokemon.weight}}</p>
+                </div>
+            </li>                   
+        </ul>
+    </div>  
+    <button (click)="backMain()">Atras</button>      
+  </section>
