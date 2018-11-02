@@ -16,14 +16,4 @@ export class PokeapiService {
     return this.http.get(this.url);
   }
 
-  // getPokemon(id:number){
-  //   let pokemons;
-  //   this.http.get(this.url)
-    
-
-  //   console.log(pokemons);
-
-  // }
-
-
 }
