@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/shared/header/header.component';
+import { MarvelAppComponent } from './pages/marvel-app/marvel-app.component';
+import { CardsContainerComponent } from './components/cards-container/cards-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    MarvelAppComponent,
+    CardsContainerComponent
   ],
   imports: [
     BrowserModule
