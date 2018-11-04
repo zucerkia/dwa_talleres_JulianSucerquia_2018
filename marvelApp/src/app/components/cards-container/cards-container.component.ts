@@ -15,6 +15,7 @@ export class CardsContainerComponent implements OnInit {
     this._marvel.getComics().subscribe((data:any)=>{
       this.comics = data['data']['results'];
       this.data = data['data']['results'];
+
     });
 
    }
