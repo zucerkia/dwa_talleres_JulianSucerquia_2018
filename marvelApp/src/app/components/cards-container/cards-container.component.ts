@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MarvelService } from '../../services/marvel.service';
 
 @Component({
   selector: 'app-cards-container',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardsContainerComponent implements OnInit {
 
-  constructor() { }
+  data:any = [];
+  comics:any[] = [];
+  constructor(private _marvel:MarvelService) {
+
+    this._marvel.getComics().subscribe((data:any)=>{
+      this.comics = data['data']['results'];
+      this.data = data['data']['results'];
+    });
+
+   }
 
   ngOnInit() {
+  }
+
+  searchComic(word){
+    this.comics = this._marvel.findComic(word,this.data);
+    //  console.log(this.comics);
   }
 
 }

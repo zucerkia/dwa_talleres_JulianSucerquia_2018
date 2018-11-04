@@ -1,16 +1,16 @@
 <div class="container">
   <div class="cards-container">
     <ul>
+      <app-card [comic]="comic" *ngFor="let comic of comics"></app-card>
+      <!-- <app-card></app-card>
       <app-card></app-card>
       <app-card></app-card>
       <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
+      <app-card></app-card> -->
       
     </ul>
   </div>
   <div class="search">
-      <input type="text">
+      <input type="text" (keyup)="searchComic(search.value)" #search>
   </div>
 </div>

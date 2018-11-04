@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { MarvelAppComponent } from './pages/marvel-app/marvel-app.component';
 import { CardsContainerComponent } from './components/cards-container/cards-container.component';
 import { CardComponent } from './components/card/card.component';
+import { NoImagePipe } from './pipes/no-image.pipe';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { CardComponent } from './components/card/card.component';
     HeaderComponent,
     MarvelAppComponent,
     CardsContainerComponent,
-    CardComponent
+    CardComponent,
+    NoImagePipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
