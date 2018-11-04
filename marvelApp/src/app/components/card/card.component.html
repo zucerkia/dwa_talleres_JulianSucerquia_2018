@@ -1,0 +1,18 @@
+<li class="card">
+  <div class="card-title"><h5>{{comic.title}}</h5></div>
+  <img class="card-img" [src]="comic.images | noImage" alt="">
+  <ul class="card-calification">
+    <li class="like" (click)="incrementScore('like')">
+      <div class="score">
+          <p>{{likes}}</p>
+      </div>
+      <img class="hand" src="../../../assets/img/like.png" alt="">
+    </li>
+    <li class="dislike" (click)="incrementScore('dislike')">
+        <div class="score">
+          <p>{{dislikes}}</p>
+        </div>
+        <img class="hand" src="../../../assets/img/like.png" alt="">    
+    </li>
+  </ul>
+</li>
