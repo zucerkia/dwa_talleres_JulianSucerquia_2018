@@ -12,8 +12,7 @@ export class CardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.comic.title);
-
+    // console.log(this.comic.images);
   }
 
 }

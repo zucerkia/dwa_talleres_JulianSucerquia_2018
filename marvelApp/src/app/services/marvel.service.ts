@@ -23,16 +23,24 @@ export class MarvelService {
     return this.getQuery('comics');
   }
 
-  getComic(termino:string, comics:any[]){
+  findComic(termino:string, comics:any[]){
     let comicsArr:any[] = [];
     let name = termino.toLocaleLowerCase();
 
-    // comics.forEach(element=>{
+    if(termino.length>0){
+      comics.forEach(element=>{
 
-    //   element
+        let title = element.title.toLocaleLowerCase();
 
-    // })
+        if(title.indexOf(termino) >=0){
+          comicsArr.push(element);
+        }
+      })
 
-    // this.getQuery(`comics/${id}`);
+      return comicsArr;
+    }
+    else{
+      return comics;
+    }
   }
 }
